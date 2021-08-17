@@ -23,7 +23,7 @@ export default function Form(props) {
         <div>
             <form onSubmit={onSubmit}>
                 <label htmlFor='name'>Name: </label>
-                <input type='text' 
+                <input id='name-input' type='text' 
                 name='name' 
                 // value={props.users.name}
                 placeholder='name' 
@@ -31,14 +31,14 @@ export default function Form(props) {
                 <br/>
                 <label htmlFor='email'>Email: </label>
                 <input type='email' 
-                name='email'
+                name='email'id="email-input"
                 // value={props.users.email}
                  placeholder='Email'
                   onChange={onChange}/>
                 <br/>
                 <label htmlFor='password'>Password: </label>
                 <input type='password'
-                 name='password' 
+                 name='password' id="password-input"
                 //  value={props.users.password}
                  placeholder='Password' onChange={onChange}/>
                 <br/>
